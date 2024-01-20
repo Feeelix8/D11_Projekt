@@ -1,4 +1,4 @@
-# GPS-Image-Notes-App
+# MapSnap
 
 ## Modul D11
 
@@ -10,6 +10,6 @@
 
 &nbsp;&nbsp;
 
-Android App mit einer Room Datenbank, in der eine Liste mit den Werten von Beschreibung, Foto und Standort verwaltet wird.
+MapSnap ist eine Android App mit einer Room Datenbank, in der eine Liste mit den Werten von Beschreibung, Foto und Standort verwaltet wird.
 
 Die Einträge können in der App erstellt, bearbeitet und gelöscht werden.
