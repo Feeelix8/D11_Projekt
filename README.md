@@ -1,4 +1,4 @@
-# GPS-Image-Note-App
+# GPS-Image-Notes-App
 
 ## D11
 
