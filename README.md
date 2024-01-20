@@ -1,8 +1,8 @@
 # GPS-Image-Notes-App
 
-## D11
+## Modul D11
 
-## Team ALO
+### Team ALO
 
 * Ilkkan Alphan
 * Eric Langer
