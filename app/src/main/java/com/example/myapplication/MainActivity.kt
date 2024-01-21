@@ -14,15 +14,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Find views by ID
-        val btnLogin = findViewById<Button>(R.id.btnLogin)
+        val myButton = findViewById<Button>(R.id.myButton)
 
-        // Rotate Icon
+        // Atmen Icon
         val ivIcon = findViewById<ImageView>(R.id.ivIcon)
-        val rotation = AnimationUtils.loadAnimation(this, R.anim.rotate)
+        val rotation = AnimationUtils.loadAnimation(this, R.anim.atmen)
         ivIcon.startAnimation(rotation)
 
         // Set OnClickListener
-        btnLogin.setOnClickListener{
+        myButton.setOnClickListener{
             // Show Signed-In-Message
             Toast.makeText(this, getString(R.string.signed_in), Toast.LENGTH_LONG).show()
 

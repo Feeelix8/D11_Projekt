@@ -21,10 +21,12 @@
         style="@style/Icon"/>
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
+        android:id="@+id/myButton"
+        style="@style/Button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        style="@style/Button"/>
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:elevation="20dp"/>
 
 </FrameLayout>
