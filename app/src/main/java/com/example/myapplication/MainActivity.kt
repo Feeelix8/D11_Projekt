@@ -7,14 +7,23 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
+import android.location.Location
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.location.FusedLocationProviderClient
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Find views by ID
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+
+
+
+    // Find views by ID
         val myButton = findViewById<Button>(R.id.myButton)
 
         // Atmen Icon
