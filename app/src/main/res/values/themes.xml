@@ -49,4 +49,7 @@
     <style name="ListItem.Message">
         <item name="android:textSize">16sp</item>
     </style>
+    <style name="ListItem.Location">
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>

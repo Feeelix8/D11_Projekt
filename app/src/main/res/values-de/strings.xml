@@ -12,4 +12,8 @@
     <string name="no">Nein</string>
     <string name="note_deleted">Notiz gelöscht</string>
     <string name="delete_message">Möchtest du diese Notiz wirklich löschen?</string>
+    <string name="location">Standort: Latitude, Longitude </string>
+    <string name="current_location">Aktueller Standort: Latitude, Longitude </string>
+    <string name="location_denied">Standortfreigabe wurde abgelehnt</string>
+    <string name="location_null">Letzter bekannter Standort ist Null </string>
 </resources>

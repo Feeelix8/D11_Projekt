@@ -20,4 +20,11 @@
     android:text="@string/hint_message"
     style="@style/ListItem.Message"/>
 
+    <TextView
+        android:id="@+id/tvCurrentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        style="@style/ListItem.Location" />
+
 </LinearLayout>
