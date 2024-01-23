@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         style="@style/Icon"/>
 
+
     <Button
         android:id="@+id/myButton"
         style="@style/Button"
@@ -27,6 +28,24 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"
         android:layout_marginBottom="20dp"
-        android:elevation="20dp"/>
+        android:elevation="20dp" />
+
+    <TextView
+        android:id="@+id/weatherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="175dp"
+        android:elevation="24dp"
+        android:text="Aktuelles Wetter: -" />
+
+    <Button
+        android:id="@+id/fetchWeatherButton"
+        style="@style/ButtonW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"/>
+
+
 
 </FrameLayout>

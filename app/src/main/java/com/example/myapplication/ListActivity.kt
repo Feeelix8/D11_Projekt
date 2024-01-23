@@ -12,6 +12,7 @@ import android.widget.ListView
 import android.widget.TextView
 import androidx.room.Room
 
+
 class ListActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
 
     private var noteDao: NoteDao? = null

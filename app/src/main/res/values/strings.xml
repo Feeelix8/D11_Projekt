@@ -12,4 +12,5 @@
     <string name="no">No</string>
     <string name="note_deleted">Note deleted</string>
     <string name="delete_message">Do you really want to delete this note?</string>
+    <string name="weather" translatable="false">MapSnap Wetter</string>
 </resources>
