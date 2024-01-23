@@ -108,7 +108,7 @@ class MainActivity : AppCompatActivity() {
             val longitude = params[1]
 
             val url =
-                URL("http://api.openweathermap.org/data/2.5/weather?lat=$latitude&lon=$longitude&appid=$apiKey")
+                URL("http://api.openweathermap.org/data/2.5/weather?lat=$latitude&lon=$longitude&appid=$apiKey&units=metric")
             val urlConnection = url.openConnection() as HttpURLConnection
             try {
                 val reader = BufferedReader(InputStreamReader(urlConnection.inputStream))
