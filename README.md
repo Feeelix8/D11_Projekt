@@ -21,11 +21,11 @@ Dieses Projekt nutzt eine Reihe moderner Technologien und Praktiken:
 - **Room Database:** Für effiziente und strukturierte Datenhaltung.
 - **Google Services:** Play Services, Location Services, API für Open Weather App
 
-## Screenshots
+## Screen-Design
 
-![Hauptbildschirm](https://ibb.co/Yky8sZy)
-![Notizenliste](https://ibb.co/r6phdR7)
-![Notizenbearbeitung](https://ibb.co/NTSgjvx)
+![Hauptbildschirm](https://i.postimg.cc/Jzc18zzH/Mainscreen.png)
+![Notizenliste](https://i.postimg.cc/LX7SDqNw/Notizenliste.png)
+![Notizenbearbeitung](https://i.postimg.cc/pdcyNLsY/Notizenbearbeitung.png)
 
 ### Installation
 
