@@ -27,4 +27,11 @@
         android:text="@string/location"
         style="@style/ListItem.Location" />
 
+    <ImageView
+        android:id="@+id/ivNoteImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
 </LinearLayout>

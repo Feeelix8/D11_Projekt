@@ -17,6 +17,10 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import android.graphics.BitmapFactory
+import android.widget.ImageView
+import android.provider.MediaStore
+import android.content.Intent
 
 class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
 
@@ -29,6 +33,10 @@ class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var tvCurrentLocation: TextView
     private val locationList = mutableListOf<Location>()
+
+    // add ImageView
+    private lateinit var ivNoteImage: ImageView
+    private val PICK_IMAGE_REQUEST = 1
 
     companion object {
         private const val LOCATION_PERMISSION_REQUEST_CODE = 1
@@ -48,6 +56,13 @@ class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
         val etMessage = findViewById<EditText>(R.id.etMessage)
         val btnSave = findViewById<Button>(R.id.btnSave)
         tvCurrentLocation = findViewById<TextView>(R.id.tvCurrentLocation)
+        ivNoteImage = findViewById(R.id.ivNoteImage)
+
+        // Set OnClickListener for Image Selection
+        ivNoteImage.setOnClickListener {
+            val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+            startActivityForResult(intent, PICK_IMAGE_REQUEST)
+        }
 
         //location provider
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
@@ -79,6 +94,8 @@ class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
             etMessage?.setText(note?.message)
             latitude = note?.latitude ?: 0.0
             longitude = note?.longitude ?: 0.0
+            val bitmap = BitmapFactory.decodeFile(note?.image)
+            ivNoteImage.setImageBitmap(bitmap)
 
         }
 
@@ -94,7 +111,7 @@ class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
                 note!!.longitude = longitude
                 noteDao?.update(note!!)
             } else {
-                noteDao!!.insertAll(Note(title, message, latitude, longitude))
+                noteDao!!.insertAll(Note(title, message, latitude, longitude, ""))
             }
 
             // Show toast for user
@@ -103,7 +120,14 @@ class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
             finish()
         }
     }
-
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.data != null) {
+            val imageUri = data.data
+            // Set the selected image to the ImageView
+            ivNoteImage.setImageURI(imageUri)
+        }
+    }
     private fun getLocation() {
         // Get the last known location
         fusedLocationClient.lastLocation
