@@ -39,6 +39,21 @@ sdk.dir=C\:\\Users\\BENUTZERNAME\\AppData\\Local\\Android\\Sdk
 
 Für das Emulated Device muss eine Location gesetzt werden, damit die Wetter und GPS Features funktionieren kann.
 
+## Starten der Applikation
+
+Vor dem Starten der App, empfehlen wir den Storage und Cache für die App "MapSnap" zu löschen.
+
+Hierzu navigieren Sie bitte zu: Settings >> Apps & notifications >> MapSnap
+
+1. Klicken Sie auf **Force Stop**
+2. Navigieren Sie zu **Storage and Cache**
+3. Klicken Sie auf **Clear Storage** und anschließend auf **clear cache** (siehe Screenshot)
+4. Nun können Sie die App eindwandfrei starten
+![Cache und Stroge löschen](https://i.postimg.cc/8PfGBFZM/mapsnap-cache.png)
+
+
+1. 
+
 ## Kontakt
 
 Für weitere Fragen oder Feedback kontaktieren Sie uns bitte unter [support@mapsnap.com](mailto:support@mapsnap.com).
