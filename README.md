@@ -10,20 +10,28 @@
 
 &nbsp;&nbsp;
 
-MapSnap ist eine Android App mit einer Room Datenbank, in der eine Liste mit den Werten von Beschreibung, Foto und Standort verwaltet wird.
+MapSnap ist eine moderne Android-App, die es Benutzern ermöglicht, Notizen mit spezifischen Standortdaten zu verknüpfen. Egal, ob Sie Orte für zukünftige Reisen markieren oder Erinnerungen an besondere Orte festhalten möchten, MapSnap bietet eine intuitive und nahtlose Möglichkeit, Ihre Welt zu kartieren.
 
-Die Einträge können in der App erstellt, bearbeitet und gelöscht werden.
+## Technologien
 
-Zusätzlich kann beim Start der App das aktuelle Wetter abgefragt werden.
+Dieses Projekt nutzt eine Reihe moderner Technologien und Praktiken:
 
+- **Kotlin:** Die gesamte App ist in Kotlin geschrieben.
+- **Android Jetpack:** Für eine robuste und wartbare App-Architektur.
+- **Room Database:** Für effiziente und strukturierte Datenhaltung.
+- **Google Services:** Play Services, Location Services, API für Open Weather App
 
-&nbsp;&nbsp;
+## Screenshots
 
-### Install
+![Hauptbildschirm](https://ibb.co/Yky8sZy)
+![Notizenliste](https://ibb.co/r6phdR7)
+![Notizenbearbeitung](https://ibb.co/NTSgjvx)
 
-Projekt in Android Studio öffnen.
+### Installation
+
+Klonen Sie das Repository und importieren Sie es in Android Studio: 
 
 Den korrekten Pfad zur SDK in **local.properties** (sdk.dir = ...) eintragen.
 
-Für das Emulated Device muss eine Location gesetzt werden, damit die Wetter und GPS Features funktionieren.
+Für das Emulated Device muss eine Location gesetzt werden, damit die Wetter und GPS Features funktionieren kann.
 
