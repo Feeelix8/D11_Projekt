@@ -8,8 +8,6 @@
 * Eric Langer
 * Felix Ossmann
 
-&nbsp;&nbsp;
-
 MapSnap ist eine moderne Android-App, die es Benutzern ermöglicht, Notizen mit spezifischen Standortdaten zu verknüpfen. Egal, ob Sie Orte für zukünftige Reisen markieren oder Erinnerungen an besondere Orte festhalten möchten, MapSnap bietet eine intuitive und nahtlose Möglichkeit, Ihre Welt zu kartieren.
 
 ## Technologien
@@ -27,11 +25,17 @@ Dieses Projekt nutzt eine Reihe moderner Technologien und Praktiken:
 ![Notizenliste](https://i.postimg.cc/LX7SDqNw/Notizenliste.png)
 ![Notizenbearbeitung](https://i.postimg.cc/pdcyNLsY/Notizenbearbeitung.png)
 
-### Installation
+## Installation
 
-Klonen Sie das Repository und importieren Sie es in Android Studio: 
+Klonen Sie das Git-Repository und importieren Sie es in Android Studio:
+```
+$ git clone https://github.com/Feeelix8/MapSnap
+```
 
 Den korrekten Pfad zur SDK in **local.properties** (sdk.dir = ...) eintragen.
 
 Für das Emulated Device muss eine Location gesetzt werden, damit die Wetter und GPS Features funktionieren kann.
 
+## Kontakt
+
+Für weitere Fragen oder Feedback kontaktieren Sie uns bitte unter [support@mapsnap.com](mailto:support@mapsnap.com).
