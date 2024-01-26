@@ -51,9 +51,6 @@ Hierzu navigieren Sie bitte zu: Settings >> Apps & notifications >> MapSnap
 4. Nun können Sie die App eindwandfrei starten
 ![Cache und Stroge löschen](https://i.postimg.cc/8PfGBFZM/mapsnap-cache.png)
 
-
-1. 
-
 ## Kontakt
 
 Für weitere Fragen oder Feedback kontaktieren Sie uns bitte unter [support@mapsnap.com](mailto:support@mapsnap.com).
