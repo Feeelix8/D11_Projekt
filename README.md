@@ -49,7 +49,7 @@ Hierzu navigieren Sie bitte zu: Settings >> Apps & notifications >> MapSnap
 2. Navigieren Sie zu **Storage and Cache**
 3. Klicken Sie auf **Clear Storage** und anschließend auf **clear cache** (siehe Screenshot)
 4. Nun können Sie die App eindwandfrei starten
-![Cache und Stroge löschen](https://i.postimg.cc/8PfGBFZM/mapsnap-cache.png)
+![Cache und Stroge löschen](https://i.postimg.cc/WpXm6zdN/mapsnap-cache.png)
 
 ## Kontakt
 
