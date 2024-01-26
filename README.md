@@ -29,10 +29,13 @@ Dieses Projekt nutzt eine Reihe moderner Technologien und Praktiken:
 
 Klonen Sie das Git-Repository und importieren Sie es in Android Studio:
 ```
-$ git clone https://github.com/Feeelix8/MapSnap
+git clone https://github.com/Feeelix8/MapSnap
 ```
 
-Den korrekten Pfad zur SDK in **local.properties** (sdk.dir = ...) eintragen.
+Den korrekten Pfad zur SDK in **local.properties** eintragen (jeweiligen Pfad ändern):
+```
+sdk.dir=C\:\\Users\\BENUTZERNAME\\AppData\\Local\\Android\\Sdk
+```
 
 Für das Emulated Device muss eine Location gesetzt werden, damit die Wetter und GPS Features funktionieren kann.
 
