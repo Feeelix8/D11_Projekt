@@ -40,6 +40,8 @@ class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
 
     companion object {
         private const val LOCATION_PERMISSION_REQUEST_CODE = 1
+        private const val PICK_IMAGE_REQUEST = 2 // Hinzugefügt
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -124,7 +126,7 @@ class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.data != null) {
             val imageUri = data.data
-            // Set the selected image to the ImageView
+            // Setze das ausgewählte Bild in die ImageView
             ivNoteImage.setImageURI(imageUri)
         }
     }

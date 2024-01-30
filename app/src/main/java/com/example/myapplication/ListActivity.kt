@@ -67,5 +67,6 @@ class ListActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         val intent = Intent(this, NoteEditActivity::class.java)
         intent.putExtra("id", id)
         startActivity(intent)
+
     }
 }
